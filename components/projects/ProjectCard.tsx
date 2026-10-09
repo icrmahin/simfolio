@@ -20,12 +20,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       />
 
       {/* Soft gradient for content readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
       {/* Project information */}
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 text-white sm:gap-6 sm:p-5">
         <div className="min-w-0">
-          <h3 className="text-lg font-semibold tracking-tight">{project.title}</h3>
+          <h3 className="text-lg font-semibold tracking-tight">
+            {project.title}
+          </h3>
 
           <p className="mt-1 max-w-md text-sm leading-relaxed text-white/75">
             {project.description}
